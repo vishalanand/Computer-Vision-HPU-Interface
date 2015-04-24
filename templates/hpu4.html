@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+	<head>
+
+		<title>TuringTested</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename='hpu.css') }}">
+
+		<script type = "text/javascript" src = "{{ url_for('static', filename='hpu4.js') }}"></script>
+
+	</head>
+
+	<body>
+
+		<div id = "aside">
+
+			<div id = "menu"> 
+				
+				INSTRUCTIONS : <br><br>
+				
+				Click on the center of the pedestrians which have not been detected <br><br>
+				Press CTRL + Z to Undo <br><br>
+				Press CTRL + S to Save <br><br>
+
+			</div>
+
+			<div id = "info"> Image status </div>
+
+		</div>
+
+		<div id = "container"> 
+
+			<div id = "header"> Click on the center of the pedestrian which aren't bounded by yellow boxes </div>
+
+			<div id = "content">
+
+				<canvas id = "canvas"></canvas>
+
+			</div>
+		
+		</div>
+
+	</body>
+
+</html>

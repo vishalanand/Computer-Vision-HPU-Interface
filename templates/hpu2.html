@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+	<head>
+
+		<title>TuringTested</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename='hpu.css') }}">
+
+		<script type = "text/javascript" src = "{{ url_for('static', filename='hpu2.js') }}"></script>
+
+	</head>
+
+	<body>
+
+		<div id = "aside">
+
+			<div id = "menu"> 
+				
+				INSTRUCTIONS : <br><br>
+				
+				Click on the centers of the pedestrian which have not been detected <br><br>
+				Press ENTER if the image contains a pedestrian <br><br>
+				Press SPACE if the image doesn't contain a pedestrian <br><br>
+
+			</div>
+
+			<div id = "info"> Image status </div>
+
+		</div>
+
+		<div id = "container"> 
+
+			<div id = "header"> Determine whether the image contains a COMPLETE pedestrian or not </div>
+
+			<div id = "content">
+
+				<canvas id = "canvas"></canvas>
+
+			</div>
+		
+		</div>
+
+	</body>
+
+</html>
